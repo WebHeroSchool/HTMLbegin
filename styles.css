@@ -1,81 +1,100 @@
-.main-content__title{
-  font-family:pt_serif;
-}
-
-
 body{
-  margin:0;
-
+  margin: 0;
 }
-
 .wrapper{
-  margin:auto;
-  width:80%;
-
+  margin: auto;
+  width: 80%;
 }
 .header{
-  padding:40px 0;
-  display:flex;
+  display: flex;
   justify-content: space-between;
+
 }
 .logo,.menu{
-  display:inline-block;
+  display: inline-block;
 
 }
 .logo{
-  position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px pt_serif, helvetica, arial, sans-serif;
+  font: bold 24px/32px pt_serif, arial, helvetica, sans-serif;
+  position:relative;
+
 }
 .logo__circle{
-  position: absolute;
+  position:absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
+  background: #0056EC;
   border-radius: 50%;
   opacity: .7;
-}
-.logo__circle_color_dark-blue{
-  background: #0056EC;
 }
 .logo__circle_color_blue{
   left: 8px;
   top: 56%;
   background: #C8DBFB;
+  border-radius: 50%;
 }
 .menu{
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
 .menu__item{
-  position: relative;
   margin-right: 26px;
-  font: 500 18px/21px Roboto, helvetica, arial, helvetica, sans-serif;
-  color: #000000;
-  text-decoration: none;
-  transition: opacity .5s;
-
+  font: bold 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration:none;
+  position: relative;
 }
 .menu__item:after{
-  position: absolute;
   display: block;
   content: '';
-  left: 0;
   width: 100%;
   height: 3px;
+  left: 0;
   background: #0056EC;
+  position: absolute;
   opacity: 0;
   transition: opacity .5s;
 }
 .menu__item:hover{
-  opacity:0.5;
+  opacity: .5;
 }
 .menu__item:last-child{
   margin-right: 0;
 }
 .menu__item:hover:after,.menu__item_active:after{
-  opacity:1;
+  opacity: 1;
+}
+.main{
+  padding: 206px 63% 250px 0;
+  background: center right no-repeat url('img/picture.svg');
+}
+.main__title{
+  font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+  margin: 0 0 40px 0;
+}
+.main__title-text_highlight{
+  background: #ECF3FF;
+}
+.main__subtitle{
+  font: 22px/26px Roboto, arial, helvetica, sans-serif;
+  margin: 0 0 41px 0;
+  width: 80%;
+}
+.main__button{
+  display: inline-block;
+  padding: 18px 21px;
+  background: #0056EC;
+  border-radius: 4px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+.main__button:hover{
+  opacity: .5;
 }
