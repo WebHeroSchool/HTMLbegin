@@ -66,7 +66,7 @@ body{
   opacity: .5;
 }
 .menu__item:last-child{
-  margin-right: 0;
+  margin-right: 14px;
 
 }
 .menu__item_active{
@@ -77,7 +77,7 @@ body{
 }
 .main{
   padding: 206px 63% 250px 0;
-  background: left 100.7% top 53.2% no-repeat url('img/picture.svg');
+  background: left 98.7% top 53.2% no-repeat url('img/picture.svg');
 }
 .main__title{
   font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
@@ -105,4 +105,3 @@ body{
 .main__button:hover{
   opacity: .5;
 }
-.
