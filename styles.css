@@ -8,6 +8,7 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
 }
 .logo,.menu{
@@ -44,8 +45,8 @@ body{
 
 }
 .menu__item{
-  margin-top: 6px;
-  margin-right: 28px;
+  margin-top: -15px;
+  margin-right: 27.2px;
   font: bold 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration:none;
@@ -108,6 +109,79 @@ body{
 #menu__toggle {
   opacity: 0;
 }
+@media(max-width:1500px){
+.wrapper{
+    margin: auto;
+    width: 68%;
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu__item{
+  font: bold 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration:none;
+  position: relative;
+}
+.menu__item:last-child{
+  margin-right: 3.5px;
+}
+.main{
+  padding: 100px 47% 250px 0;
+  background: left 100.7% top 30% no-repeat url('img/picture1366.svg');
+}
+.main__title{
+  font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  margin: 0 0 40px 0;
+}
+.main__subtitle{
+  font: bold 18px/21px Roboto, arial, helvetica, sans-serif;
+  margin: 0 0 41px 0;
+  padding: 0 120px 0 0;
+}
+.main__button{
+  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  width: 170px;
+  padding: 14px 16px;
+}
+@media(max-width:1244px){
+.wrapper{
+  margin: auto;
+  width: 91%;
+  }
+.menu{
+  display: flex;
+  align-items: center;
+  }
+.menu__item{
+  font: bold 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration:none;
+  position: relative;
+  }
+.menu__item:last-child{
+  margin-right: 2.5px;
+  }
+.main{
+  padding: 100px 47% 250px 0;
+  background: left 100.7% top 30% no-repeat url('img/picture1366.svg');
+  }
+.main__title{
+  font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  margin: 0 0 40px 0;
+  }
+.main__subtitle{
+  font: bold 18px/21px Roboto, arial, helvetica, sans-serif;
+  margin: 0 0 42px 0;
+  padding: 0 120px 0 0;
+  }
+.main__button{
+  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  width: 170px;
+  padding: 14px 16px;
+  }
+}
 @media(max-width:768px){
 .wrapper{
   margin: auto;
@@ -164,7 +238,7 @@ body{
 .menu__item{
   display: block;
   font: 700 30px/35px Roboto, arial, helvetica, sans-serif;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   margin-right: 3px;
   position: relative;
 }
