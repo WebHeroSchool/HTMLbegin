@@ -83,6 +83,12 @@ body{
 .main__title{
   font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
   margin: 0 0 35px 0;
+  animation: shadow 1s ease-in;
+}
+@keyframes shadow {
+  from {text-shadow: 0 0 3px black;}
+  50% {text-shadow: 0 0 30px black;}
+  to {text-shadow: 0 0 3px black;}
 }
 .main__title-text_highlight{
   background: #ECF3FF;
@@ -144,6 +150,7 @@ body{
   font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   width: 170px;
   padding: 14px 16px;
+}
 }
 @media(max-width:1244px){
 .wrapper{
