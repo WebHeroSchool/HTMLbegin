@@ -151,6 +151,7 @@ body{
   width: 170px;
   padding: 14px 16px;
 }
+}
 @media(max-width:1244px){
 .wrapper{
   margin: auto;
@@ -188,7 +189,7 @@ body{
   padding: 14px 16px;
   }
 }
-@media (max-width:768px) {
+@media(max-width:768px){
 .wrapper{
   margin: auto;
   width: 87%;
